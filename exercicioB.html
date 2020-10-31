@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>excB</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        
+        var t1 = 0, t2 = 1, t3, cont = 3;
+
+        document.write(t1," - ",t2);
+
+        while (cont <= 30){
+            t3 = parseInt(t1) + parseInt(t2);
+            document.write(" - ",t3);
+            t1 = t2;
+            t2 = t3;
+            cont++;
+        } 
+
+    </script>
+</head>
+<body>
+</body>
+</html>
