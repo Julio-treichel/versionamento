@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>exercicio6</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        var i, dado1, dado2, cont, par = 0, impar = 0, total = 0;         
+
+        for (i = 0; i < 10; i++){
+            cont = parseInt(i) + 1;
+            dado1 = Math.floor(Math.random() * 6 + 1);
+            dado2 = Math.floor(Math.random() * 6 + 1);
+            total = (parseInt(dado1) + parseInt(dado2));
+            if (total % 2 == 0){
+                alert(cont + "ª soma dos Dados: " + total + ", é PAR");
+                par++;
+            } else {
+                alert(cont + "ª soma dos Dados: " + total + ",é IMPAR");
+                impar++;
+            }
+        }
+
+        alert("Total de PARES: " + par + "\nTotal de IMPARES: " + impar);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>excb</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+
+        var x = prompt("Digite o número que deseja ver a tabuada: ");
+        var i = 1;
+        var total;
+
+        function tabuada(result, num, tab){
+            while (tab <= 10){
+                result = num * tab;
+                document.write(num + "x" + tab + "=" + result + "<br>");
+                tab++;
+            }
+        }    
+
+        console.log(tabuada(total,x,i));
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
